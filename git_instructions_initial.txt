@@ -1,0 +1,64 @@
+[2023-06-12T10:27:46.941Z] Validating found git in: /opt/homebrew/bin/git
+[2023-06-12T10:27:46.953Z] Using git 2.41.0 from /opt/homebrew/bin/git
+[2023-06-12T11:38:51.944Z] > git init [14ms]
+[2023-06-12T11:38:51.944Z] hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint: 	git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint: 	git branch -m <name>
+[2023-06-12T11:38:52.299Z] > git rev-parse --git-dir [4ms]
+[2023-06-12T11:38:52.302Z] Open repository: /Users/igor/Desktop/Moshify
+[2023-06-12T11:38:52.316Z] > git symbolic-ref --short HEAD [5ms]
+[2023-06-12T11:38:52.321Z] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/master refs/remotes/master [4ms]
+[2023-06-12T11:38:52.325Z] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+[2023-06-12T11:38:52.325Z] > git remote --verbose [3ms]
+[2023-06-12T11:38:52.330Z] > git config --get commit.template [3ms]
+[2023-06-12T11:38:52.629Z] > git ls-files --stage -- /Users/igor/Desktop/Moshify/index.html [6ms]
+[2023-06-12T11:39:59.091Z] > git add -A -- . [12ms]
+[2023-06-12T11:39:59.100Z] > git -c user.useConfigOnly=true commit --quiet --allow-empty-message --file - [7ms]
+[2023-06-12T11:39:59.100Z] Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: no email was given and auto-detection is disabled
+[2023-06-12T11:39:59.106Z] > git config --get-all user.name [4ms]
+[2023-06-12T11:41:33.990Z] > git ls-files --stage -- /Users/igor/Desktop/Moshify/index.html [4ms]
+[2023-06-12T11:41:33.993Z] > git symbolic-ref --short HEAD [4ms]
+[2023-06-12T11:41:33.996Z] > git cat-file -s aeda2b111c733abf9103fc5ef88e314c23ac0f03 [5ms]
+[2023-06-12T11:41:33.997Z] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/master refs/remotes/master [3ms]
+[2023-06-12T11:41:34.002Z] > git remote --verbose [3ms]
+[2023-06-12T11:41:34.002Z] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [4ms]
+[2023-06-12T11:41:34.006Z] > git config --get commit.template [3ms]
+
+https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup
+
+git config --list --show-origin            
+file:/opt/homebrew/etc/gitconfig        credential.helper=osxkeychain
+file:.git/config        core.repositoryformatversion=0
+file:.git/config        core.filemode=true
+file:.git/config        core.bare=false
+file:.git/config        core.logallrefupdates=true
+file:.git/config        core.ignorecase=true
+file:.git/config        core.precomposeunicode=true
+
+git config --global user.name "igorerceg78"
+git config --global user.email igorerceg78@gmail.com
+
+git config --list
+
+xml documnet is Extensible Markup Language !!!
+we can extend the language by defining our own elements 
+
