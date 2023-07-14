@@ -32,3 +32,6 @@ git config --global http.postBuffer 157286400
 
 git gc
 git fsck
+
+# TO DELETE .git DIRECTORY AND CONTENT
+rm -rf .git
